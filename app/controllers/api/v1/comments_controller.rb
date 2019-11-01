@@ -13,6 +13,6 @@ class Api::V1::CommentsController < ApplicationController
   private
 
   def check_params
-    permit(:content, :owner, :photo_id)
+    params.permit(:content, :owner, :photo_id)
   end
 end
